@@ -5,11 +5,10 @@ import 'antd/dist/antd.css';
 
 import './index.css';
 import Login from './pages/login';
-import Index from './pages/index/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Index />
+    <Login />
   </React.StrictMode>,
   document.getElementById('root')
 );
