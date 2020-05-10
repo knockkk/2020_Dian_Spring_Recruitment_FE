@@ -26,3 +26,76 @@ header {
     top: 14px;
     left: 10px;
 }
+
+.payImg{
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 10px;
+    margin-left: 20px;
+}
+
+.bodyContainer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.bodyContainer p{
+    text-align: center;
+}
+
+.bodyContainer1{
+    display:flex;
+    flex-flow: row;
+}
+
+.selectImg{
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 10px;
+    margin: 20px;
+}
+
+
+.bodyContainer2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(248, 58, 99);
+}
+
+button{
+    background-color: rgb(248, 58, 99);
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    height:50px;
+    border-radius:10px;
+    width: 95%;
+}
+
+footer{
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    clear:both; 
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid rgba(85, 77, 86, 0.12);
+}
+
+.recommend{
+    background-color:rgb(248, 58, 99);
+    color: white ;
+    font-size: smaller;
+    border-radius: 5px;
+    margin-right: auto;
+    height: 20px;
+    margin-left: 5px;
+    width:36px;
+    text-align: center;
+}
