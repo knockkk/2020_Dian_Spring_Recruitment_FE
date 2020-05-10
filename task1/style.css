@@ -26,3 +26,115 @@ header {
     top: 14px;
     left: 10px;
 }
+
+/* my code */
+/* div 元素定位 */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.content, .confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.wechatpay, .alipay {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* div 元素定位 */
+
+/* 表单 */
+.content {
+    width: 85%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(85, 77, 86, 0.12);
+}
+#title {
+    font-size: 15px;
+}
+#money {
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+#money span {
+    font-size: 15px;
+}
+#number {
+    color: rgba(85, 77, 86, 0.5);
+}
+/* 表单 */
+
+/* 支付方式 */
+.pay {
+    width: 100%;
+}
+.wechatpay, .alipay {
+    width: 90%;
+    margin: 10px;
+}
+.wechatpay p, .alipay p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 12px;
+    width: 82%;
+    order: 2;
+}
+.alipay p span {
+    margin-left: 9px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 20%;
+    font-size: 13px;
+    background-color: red;
+    color: white;
+}
+#wechat, #ali {
+    width: 30px;
+    height: 30px;
+    order: 1;
+}
+#selected, #unselected {
+    width: 23px;
+    height: 23px;
+    order: 3;
+}
+/* 支付方式 */
+
+/* 确认支付 */
+.confirm {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    border-top: 1px solid rgba(85, 77, 86, 0.12);
+}
+.confirm p {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+/* 确认支付 */
+/* my code */
