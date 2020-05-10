@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    height: 100%;
+    font-family: '微软雅黑';
+}
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #ffffff;
 }
@@ -14,15 +18,104 @@ header {
     align-items: center;
     position: relative;
     height: 48px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 1px solid rgba(85, 77, 86, 0.12);
-}
+    font-size: 1em;
+    font-weight: 700;
+    
+    color: #161822;
+    border-bottom: 0.8px solid #d0d1d3;
 
+}
 .backImg{ 
     width: 20px;
     height: 20px;
     position: absolute;
     top: 14px;
     left: 10px;
+}
+
+.order{
+    margin: 0px 16px;
+    padding: 20px 0px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95.5px;
+    border-bottom: 0.8px solid  #d0d1d3;
+}
+[title='1']{
+    color: #2d2f38;
+    font-size: 14px;
+}
+[title='2']{
+    color: #161822;
+    font-size: 24px;
+    font-weight: 600;
+}
+[title='2'] span {
+    font-size: 16px;
+}
+[title="3"]{
+    color: #8a8b90;
+    font-size: 12px;
+}
+.payer{
+    margin: 37.3px 16px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    font-size: 16px;
+}
+.payer [Img='1']{ 
+    width: 28px;
+    position: relative;
+}
+.payer [Img='2']{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #ea445a;
+    color:white ;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+    width:38px;
+    height: 20px;
+}
+.payer [Img='last']{
+    margin-left: auto;
+    margin-right: 0px;
+    width: 20px;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-top: 0.8px solid #d0d1d3;
+    bottom:0px;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+}
+footer .buttoner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #ea445a;
+    color:white ;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+    width:90vw;
+    height: 40px;
+    font-family:  Arial;
 }
