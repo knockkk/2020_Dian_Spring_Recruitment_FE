@@ -35,6 +35,13 @@ header {
     margin-left: 20px;
 }
 
+.selectImg{
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    margin-right: 20px;
+}
+
 .bodyContainer{
     display:flex;
     flex-flow: column;
@@ -48,15 +55,10 @@ header {
 .bodyContainer1{
     display:flex;
     flex-flow: row;
-}
-
-.selectImg{
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    left: 10px;
     margin: 20px;
 }
+
+
 
 
 .bodyContainer2{
