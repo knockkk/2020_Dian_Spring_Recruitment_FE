@@ -1,0 +1,40 @@
+@import '~antd/dist/antd.css';
+
+#components-layout-demo-fixed {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.content-title{
+  height: 360px;
+  margin: 5px 18px;
+  padding: 10px 15px;
+  border: 1px solid rgba(85, 77, 86, 0.12);
+}
+.content-title h1, .content-title p{
+  margin-bottom: 10px;
+}
+.time {
+  font-size: 12px;
+}
+.content {
+  font-size: 15px;
+  font-weight: 400;
+}
+.tocenter {
+  text-align: center;
+}
+.picture {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
