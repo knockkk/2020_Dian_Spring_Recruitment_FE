@@ -31,6 +31,7 @@ function turn(square){//原来它传进来一个square参数啊，我以为它�
         };
         if(Player=="X")Player="O";
         else Player="X";
+        document.getElementById("change").innerText=Player;
     }
 }
 function checkWin(b,p){//太智能了，有return就有返回值，没有就没返回值
