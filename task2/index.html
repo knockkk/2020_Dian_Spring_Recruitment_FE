@@ -9,27 +9,29 @@
 </head>
 
 <body>
+    
     <div class="container" id="container">
-        <div>Next Player: <span class="player">O</span> </div>
-        <div class="panel">
+        <div id="out">Next Player: <span class="player" id="change">X</span> </div>
+        <div class="panel" id="what">
             <div class='col'>
-                <div>X</div>
-                <div></div>
-                <div></div>
+                <div class="c" id="0"></div>
+                <div class="c" id="1"></div>
+                <div class="c" id="2"></div>
             </div>
             <div class='col'>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="c" id="3"></div>
+                <div class="c" id="4"></div>
+                <div class="c" id="5"></div>
             </div>
             <div class='col'>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="c" id="6"></div>
+                <div class="c" id="7"></div>
+                <div class="c" id="8"></div>
             </div>
         </div>
     </div>
     <script src="main.js"></script>
+    <!--放在最后面可改善显示速度，因为脚本编译会拖慢显示。NB嗷-->
+    <!--已缓存的 JavaScript 文件可加速页面加载-->
 </body>
-
 </html>
