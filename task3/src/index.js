@@ -5,10 +5,38 @@ import 'antd/dist/antd.css';
 
 import './index.css';
 import Login from './pages/login';
+import Home from './pages/home';
+
+class Page extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      login: false,
+    }
+  }
+
+  handleSubmit() {
+    this.setState({
+      login: true,
+    })
+  }
+
+  render() {
+    if (this.state.login) {
+      return (
+        <Home />
+      );
+    } else {
+      return (
+        <Login onSubmit={() => this.handleSubmit()} />
+      );
+    }
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <Page />
   </React.StrictMode>,
   document.getElementById('root')
 );

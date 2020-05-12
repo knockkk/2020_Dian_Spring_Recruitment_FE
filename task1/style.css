@@ -59,22 +59,24 @@ main {
 /* 表单 */
 .content {
     width: 85%;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid rgba(85, 77, 86, 0.12);
 }
 #title {
-    font-size: 15px;
+    font-size: 13px;
 }
 #money {
-    margin-top: 8px;
-    margin-bottom: 3px;
-    font-size: 20px;
-    font-weight: 1000;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 550;
 }
 #money span {
-    font-size: 15px;
+    font-size: 17px;
+    margin-right: 5px;
 }
 #number {
+    font-size: 13px;
     color: rgba(85, 77, 86, 0.5);
 }
 /* 表单 */
@@ -85,24 +87,26 @@ main {
 }
 .wechatpay, .alipay {
     width: 90%;
-    margin: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
 }
 .wechatpay p, .alipay p {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 12px;
+    margin-left: 10px;
     width: 82%;
     order: 2;
 }
 .alipay p span {
-    margin-left: 9px;
+    margin-left: 10px;
     padding-bottom: 1px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     border-radius: 20%;
-    font-size: 13px;
+    font-size: 12px;
     background-color: red;
     color: white;
 }
@@ -121,13 +125,13 @@ main {
 /* 确认支付 */
 .confirm {
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: absolute;
     bottom: 5px;
     border-top: 1px solid rgba(85, 77, 86, 0.12);
 }
 .confirm p {
-    width: 90%;
+    width: 86%;
     height: 100%;
     padding: 10px;
     margin: 10px;
@@ -135,6 +139,7 @@ main {
     text-align: center;
     background-color: red;
     color: white;
+    border-radius: 2px;
 }
 /* 确认支付 */
 /* my code */

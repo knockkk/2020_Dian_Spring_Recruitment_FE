@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import { Layout, Menu, Row, Col } from 'antd';
 import { FileTextOutlined, EditOutlined } from '@ant-design/icons'
@@ -65,21 +64,26 @@ class RowContent extends React.Component {
 
 // ==============================
 
-ReactDOM.render(
-  <Layout>
-    {/* Header */}
-    <Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: 0 }}>
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-        <Menu.Item key="1"><FileTextOutlined />帖子</Menu.Item>
-        <Menu.Item key="2"><EditOutlined />发布</Menu.Item>
-      </Menu>
-    </Header>
-    {/* Content */}
-    <Content className="site-layout" style={{ marginTop: 64 }}>
-      <div className="site-layout-background" style={{ padding: '24px 80px', minHeight: 380 }}>
-        <RowContent />
-      </div>
-    </Content>
-  </Layout>,
-  document.getElementById('root')
-);
+class Home extends React.Component {
+  render() {
+    return(
+      <Layout>
+        {/* Header */}
+        <Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: 0 }}>
+          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+            <Menu.Item key="1"><FileTextOutlined />帖子</Menu.Item>
+            <Menu.Item key="2"><EditOutlined />发布</Menu.Item>
+          </Menu>
+        </Header>
+        {/* Content */}
+        <Content className="site-layout" style={{ marginTop: 64 }}>
+          <div className="site-layout-background" style={{ padding: '24px 80px', minHeight: 380 }}>
+            <RowContent />
+          </div>
+        </Content>
+      </Layout>
+    );
+  }
+}
+
+export default Home;

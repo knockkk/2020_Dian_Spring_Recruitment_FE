@@ -12,9 +12,10 @@ const tailLayout = {
     },
 };
 
-const Login = () => {
+const Login = (props) => {
     const onFinish = values => {
         console.log('Success:', values);
+        props.onSubmit();
     };
 
     const onFinishFailed = errorInfo => {
