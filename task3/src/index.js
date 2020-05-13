@@ -4,11 +4,12 @@ import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
 
 import './index.css';
-import Login from './pages/login';
+import App from './router';
+//import Content from './pages/content';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
