@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Layout, Menu, Row, Col } from 'antd';
+import { Layout, Menu, Row, Col, Spin } from 'antd';
 import { FileTextOutlined, EditOutlined } from '@ant-design/icons'
 const { Header, Content } = Layout;
 
@@ -24,6 +24,9 @@ class RowContent extends React.Component {
     this.state = {
       getcontent: [],
     };
+  }
+
+  componentDidMount() {
     this.getContentFromURL('https://5e9c0a2810bf9c0016dd2581.mockapi.io/api/articles');
   }
 
@@ -54,11 +57,13 @@ class RowContent extends React.Component {
 
   render() {
     const showtags = this.generateTags();
-    return(
-      <Row>
-        {showtags}
-      </Row>
-    );
+    if (showtags.length === 0) {
+      return ( <Spin tip="Loading" size="large" className="Loading" /> );
+    } else { return(
+        <Row>
+          {showtags}
+        </Row>
+      );}
   }
 }
 
@@ -85,5 +90,4 @@ class Home extends React.Component {
     );
   }
 }
-
 export default Home;

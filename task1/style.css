@@ -86,21 +86,23 @@ main {
     width: 100%;
 }
 .wechatpay, .alipay {
+    justify-content: space-between;
     width: 90%;
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 30px;
 }
-.wechatpay p, .alipay p {
+.wechatpay div, .alipay div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 10px;
-    width: 82%;
     order: 2;
 }
-.alipay p span {
+.pay-message {
+    margin-left: 10px;
+}
+.alipay div span {
     margin-left: 10px;
     padding-bottom: 1px;
     padding-left: 4px;
@@ -130,7 +132,7 @@ main {
     bottom: 5px;
     border-top: 1px solid rgba(85, 77, 86, 0.12);
 }
-.confirm p {
+.confirm div {
     width: 86%;
     height: 100%;
     padding: 10px;

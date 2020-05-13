@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { Form, Input, Button } from 'antd';
-import './index.css'
+import './index.css';
+import { Link } from 'react-router-dom';
+
 const layout = {
     labelCol: { span: 8 },
     wrapperCol: { span: 16 },
@@ -12,10 +14,9 @@ const tailLayout = {
     },
 };
 
-const Login = (props) => {
+const Login = () => {
     const onFinish = values => {
         console.log('Success:', values);
-        props.onSubmit();
     };
 
     const onFinishFailed = errorInfo => {
@@ -62,7 +63,7 @@ const Login = (props) => {
 
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
-                        Submit
+                        <Link to='/home/'>Submit</Link>
                     </Button>
                 </Form.Item>
             </Form>
