@@ -1,0 +1,24 @@
+.Block{
+  display:flex;
+  flex-direction: row;
+  padding:10px 90px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.Block [txt="1"]{
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 240px;
+  height: 300px;
+  border: 1px solid rgb(235, 235, 235);
+  margin: 20px 0px ;
+  padding: 20px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
