@@ -1,7 +1,6 @@
 import React from 'react'
 import { Menu,Card,Col,Row} from 'antd';
 import { FileTextOutlined, EditOutlined } from '@ant-design/icons';
-//import {Router , Route , Link} from 'react-router';
 import './index.css'
 
 
@@ -49,7 +48,6 @@ class Content extends React.Component{
              document.getElementById('card1').title=title;
              })
              .catch(err => console.log(err));
-    
       }
 
       componentWillMount(){
@@ -64,8 +62,8 @@ class Content extends React.Component{
         let title = '';
         data.forEach((user) => {
             if(user.id==="2"){
-         content += `<li>${user.content}</li>`;
-         time += `<li>${user.createdAt}</li>`;
+         content += `${user.content}`;
+         time += `${user.createdAt}`;
          imgSrc = `${user.avatar}`;
          author =`${user.author}`;
          title = `${user.title}`;
@@ -136,102 +134,6 @@ class Content extends React.Component{
         );
     }
 }
-
-/*var xhr = '';
-if (window.XMLHttpRequest) {
-    xhr = new window.XMLHttpRequest();
-} else {
-    //xhr = new ActiveXObject('Microsoft.XMLHttp');
-}
-window.onload = function () {
-        xhr.open('get','https://5e9c0a2810bf9c0016dd2581.mockapi.io/api/articles',true);
-
-        //xhr.send( 'memberId='+ username + '&&password=' + password );
-        xhr.onreadystatechange = function () {
-            // readyState: 
-            //     0: 请求未初始化
-//                 1: 服务器连接已建立
-//                 2: 请求已接收
-//                 3: 请求处理中
-//                 4: 请求已完成，且响应已就绪
-//             status:
-//                 200: 'ok'
-//                 404: 未找到页面或接口
-//                 xhr.responseText: 后端返回的数据
-                if(xhr.readyState === 4 && xhr.status === 200 ) {
-                    document.getElementById('card1').innerHTML = xhr.responseText;
-                    var json = JSON.parse(xhr.responseText);
-                    console.log(json);
-                }
-
-        }
-
-}*/
-
-
-/*window.onload = function(){getExternal1();getExternal2();}
-
-function getExternal1(){
- fetch("https://5e9c0a2810bf9c0016dd2581.mockapi.io/api/articles")
-  .then((res) => res.json())
-  .then(data => {
-  console.log(data);
-  let content = '';
-  let imgSrc = '';
-  let time = '';
-  let author = '';
-  let title = '';
-  data.forEach((user) => {
-      if(user.id==="1"){
-   content += `<li>${user.content}</li>`;
-   time += `<li>${user.createdAt}</li>`;
-   imgSrc = `${user.avatar}`;
-   author =`${user.author}`;
-   title = `${user.title}`;
-      }
-  })
-  document.getElementById('content1').innerHTML = content;
-  document.getElementById('time1').innerHTML = time;
-  document.getElementById('img1').src = imgSrc;
-  document.getElementById('author1').innerHTML='author:'+author;
-  document.getElementById('card1').title=title;
-  })
-  .catch(err => console.log(err));
-}
-
-
-
-function getExternal2(){
-    fetch("https://5e9c0a2810bf9c0016dd2581.mockapi.io/api/articles")
-     .then((res) => res.json())
-     .then(data => {
-     console.log(data);
-     let content = '';
-     let imgSrc = '';
-     let time = '';
-     let author = '';
-     let title = '';
-     data.forEach((user) => {
-         if(user.id==="2"){
-      content += `<li>${user.content}</li>`;
-      time += `<li>${user.createdAt}</li>`;
-      imgSrc = `${user.avatar}`;
-      author =`${user.author}`;
-      title = `${user.title}`;
-         }
-     })
-     document.getElementById('content2').innerHTML = content;
-     document.getElementById('time2').innerHTML = time;
-     document.getElementById('img2').src = imgSrc;
-     document.getElementById('author2').innerHTML='author:'+author;
-     document.getElementById('card2').title=title;
-     })
-     .catch(err => console.log(err));
-   }*/
-
-
-
-
 
 
 export default Content;
