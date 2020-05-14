@@ -15,7 +15,7 @@ class Home extends React.Component {
         this.setState({
             current: e.key,
         });
-    };
+    };/* this.setState 方法修改状态值，每次修改以后，自动调用 this.render 方法，再次渲染组件。 */
 
     render() {
         return (<Layout>
@@ -24,11 +24,8 @@ class Home extends React.Component {
                     帖子
                 </Menu.Item>
                 <Menu.Item key="out" icon={<EditOutlined />}>
-                    <a href="/Page" target="_self" rel="noopener noreferrer" >
-                        发布
-                    </a>
+                    <Link to="/Page" style={{color: 'rgb(235, 235, 235,0.65)', }}>发布</Link>
                 </Menu.Item>
-                
             </Menu>
             <Content><div className="Block">
                 <div txt='1'><h2>Title 1</h2>Content1</div>
