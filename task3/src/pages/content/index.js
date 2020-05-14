@@ -7,11 +7,6 @@ import './index.css'
 
 
 class Content extends React.Component{
-    state = {
-        current : 'post',
-    };
-    
-    //const  {hits}= this.state;
 
     handle = e =>{
         console.log('click',e);
@@ -40,8 +35,8 @@ class Content extends React.Component{
              let title = '';
              data.forEach((user) => {
                  if(user.id==="1"){
-              content += `<li>${user.content}</li>`;
-              time += `<li>${user.createdAt}</li>`;
+              content += `${user.content}`;
+              time += `${user.createdAt}`;
               imgSrc = `${user.avatar}`;
               author =`${user.author}`;
               title = `${user.title}`;
