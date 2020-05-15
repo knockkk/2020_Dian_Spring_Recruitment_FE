@@ -14,6 +14,7 @@ class Routeeee extends React.Component{
     return(
     <BrowserRouter>
     <div>
+      
       <Route path="/" exact component={Login}/>
       <Route path='/Home' component={Home}/>
       <Route path='/Page' component={Page}/>
@@ -21,9 +22,15 @@ class Routeeee extends React.Component{
     )
   }
 }
+var loader=document.getElementById('loader')
+var emmm=document.getElementById('emmm')
+loader.style.display='none';
+emmm.style.height=0;
 
 ReactDOM.render(
+  
   <React.StrictMode>
+    
     <Routeeee />
   </React.StrictMode>,
   document.getElementById('root')

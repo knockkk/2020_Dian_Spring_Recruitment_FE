@@ -22,3 +22,11 @@
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
+.content{
+  display:flex;
+  flex-direction: row;
+  height: 40px;
+}
+.emm{
+  display:none;
+}
