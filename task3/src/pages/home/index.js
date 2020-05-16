@@ -25,7 +25,6 @@ async function getDate(i) {
     document.getElementsByClassName('emm')[i].style.display = 'block';
     document.getElementsByClassName('loader')[i].style.display = 'none';
 }
-//怎么改昂，待我看看什么row之类的再来改吧。。
 
 for (var i = 0; i < 4; i++)
     getDate(i);
@@ -85,7 +84,7 @@ class Home extends React.Component {
             </div>
             </Content>
         </Layout>
-
+//我总感觉我再看一看井字棋那个函数就能把代码限制在60行以内，已经从113->92了，妹时间了，嗐！
         );
     }
 }
