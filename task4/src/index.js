@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-function Square(props)  {/* 棋盘区域函数组件，调用时的参数为父组件这个实例对象里面用到Square的那一个部分 */
+ function Square(props)  {/* 棋盘区域函数组件，调用时的参数为父组件这个实例对象里面用到Square的那一个部分 */
+  var i=props.value;
+
   return (
+    
     <button className="square" onClick={props.onClick}>
       {/* 事件：棋盘区域被点击时，调用父组件Board针对Square传下来的onClick函数 */}
-      {props.value}{/* 用现在的状态渲染棋盘区域 */}
+      {i}{/* 用现在的状态渲染棋盘区域 */}
     </button>
   );
 }
