@@ -5,7 +5,6 @@ import './index.css';
 
  function Square(props)  {/* 棋盘区域函数组件，调用时的参数为父组件这个实例对象里面用到Square的那一个部分 */
   var i=props.value;
-
   return (
     
     <button className="square" onClick={props.onClick}>
@@ -14,7 +13,6 @@ import './index.css';
     </button>
   );
 }
-
 
 class Board extends React.Component {/* 棋盘组件 */
   constructor(props) {
