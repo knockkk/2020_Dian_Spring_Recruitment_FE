@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>   
+
+<html>   
+
+<head>   
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">   
+    <title>HTML5模拟微信聊天界面</title>    
+
+</head>   
+
+<body>   
+
+    <div id="container">   
+
+        <div class="header"> 
+            <img src="robot.png"></img>
+            <div>
+                <p>yybot</p>
+                <p style="font-size: small;color: grey;">查看0个知识类目绑定</p>
+            </div>
+            <img src="X.png" style="height: 20px;width: 20px;margin-right: 30px;"></img>  
+        </div>   
+
+        <ul class="content">     
+        </ul>   
+
+        <div class="footer">   
+            <div id="user_face_icon">   
+                <img src="user.jpg" alt="">   
+
+            </div> 
+           <div id='record' onclick="startRecording()"><img src='record.png' alt="" style="height: 30px;width: 30px;"></div>
+           <div id='stop' onclick="stopRecord()"><img src='stop.png' style="height: 30px;width: 30px;"></div>
+            <input id="text" type="text" placeholder="说点什么吧...">   
+
+            <span id="send">发送</span>   
+
+        </div>   
+
+    </div>   
+    <script src="main.js"></script>
+</body>   
+
+</html>   
