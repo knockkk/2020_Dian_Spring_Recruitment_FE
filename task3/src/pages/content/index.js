@@ -7,13 +7,6 @@ import './index.css'
 
 class Content extends React.Component{
 
-    handle = e =>{
-        console.log('click',e);
-        this.setState({
-            current:e.key,
-        });
-    };
-
     constructor(props) {
         super(props);
     
