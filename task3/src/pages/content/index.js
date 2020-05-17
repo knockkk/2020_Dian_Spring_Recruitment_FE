@@ -28,10 +28,15 @@ class Content extends React.Component{
              .then(data => {
              console.log(data);
              let content = '';
+             let content2 ="";
              let imgSrc = '';
+             let imgSrc2='';
              let time = '';
+             let time2='';
              let author = '';
+             let author2='';
              let title = '';
+             let title2='';
              data.forEach((user) => {
                  if(user.id==="1"){
               content += `${user.content}`;
@@ -40,44 +45,28 @@ class Content extends React.Component{
               author =`${user.author}`;
               title = `${user.title}`;
                  }
+                 else if(user.id==="2"){
+                    content2 += `${user.content}`;
+                    time2 += `${user.createdAt}`;
+                    imgSrc2 = `${user.avatar}`;
+                    author2 =`${user.author}`;
+                    title2 = `${user.title}`;
+                 }
              })
              document.getElementById('content1').innerHTML = content;
              document.getElementById('time1').innerHTML = time;
              document.getElementById('img1').src = imgSrc;
              document.getElementById('author1').innerHTML='author:'+author;
              document.getElementById('card1').title=title;
+             document.getElementById('content2').innerHTML = content2;
+             document.getElementById('time2').innerHTML = time2;
+             document.getElementById('img2').src = imgSrc2;
+             document.getElementById('author2').innerHTML='author:'+author2;
+             document.getElementById('card2').title=title2;
+
              })
              .catch(err => console.log(err));
       }
-
-      componentWillMount(){
-        fetch("https://5e9c0a2810bf9c0016dd2581.mockapi.io/api/articles")
-        .then((res) => res.json())
-        .then(data => {
-        console.log(data);
-        let content = '';
-        let imgSrc = '';
-        let time = '';
-        let author = '';
-        let title = '';
-        data.forEach((user) => {
-            if(user.id==="2"){
-         content += `${user.content}`;
-         time += `${user.createdAt}`;
-         imgSrc = `${user.avatar}`;
-         author =`${user.author}`;
-         title = `${user.title}`;
-            }
-        })
-        document.getElementById('content2').innerHTML = content;
-        document.getElementById('time2').innerHTML = time;
-        document.getElementById('img2').src = imgSrc;
-        document.getElementById('author2').innerHTML='author:'+author;
-        document.getElementById('card2').title=title;
-        })
-        .catch(err => console.log(err));
-      }
-
     render() {
 
         return (
